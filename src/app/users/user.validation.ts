@@ -4,7 +4,7 @@ export const validateCreateUser = z.object({
   body: z.object({
     name: z.string({ required_error: "name is required" }),
     email: z.string({ required_error: "email is required" }),
-    passWord: z.string({ required_error: "passWord is required" }),
+    password: z.string({ required_error: "passWord is required" }),
     bio: z.string().optional(),
     role: z.enum(["user", "admin"], { required_error: "role is required" }),
     phone: z.string().optional(),
