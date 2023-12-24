@@ -20,7 +20,7 @@ export const validateUpdateUser = z.object({
   body: z.object({
     name: z.string().optional(),
     email: z.string().optional(),
-    passWord: z.string().optional(),
+    password: z.string().optional(),
     bio: z.string().optional().optional(),
     role: z.enum(["user", "admin"]).optional(),
     phone: z.string().optional(),
