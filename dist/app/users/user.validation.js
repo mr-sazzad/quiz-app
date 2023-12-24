@@ -8,7 +8,7 @@ exports.validateCreateUser = zod_1.z.object({
         email: zod_1.z.string({ required_error: "email is required" }),
         password: zod_1.z.string({ required_error: "password is required" }),
         bio: zod_1.z.string().optional(),
-        role: zod_1.z.enum(["user", "admin"]),
+        role: zod_1.z.enum(["user", "admin"]).optional(),
         phone: zod_1.z.string().optional(),
         image: zod_1.z.string().optional(),
         score: zod_1.z.number().optional(),
